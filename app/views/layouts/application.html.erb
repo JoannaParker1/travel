@@ -7,22 +7,15 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
  
-
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
+    <link href='http://fonts.googleapis.com/css?family=Marck+Script' rel='stylesheet' type='text/css'>
     <title>Travel</title>
    
   </head>
 
   <body>
-
-
-
-<div class="container">
-	    <%= yield %>
-</div>
-
-<nav class="navbar navbar-default navbar-fixed-bottom">
-	  <div class="container">
+  <nav class="navbar navbar-default navbar-fixed-top">
 	    <!-- Brand and toggle get grouped for better mobile display -->
 	    <div class="navbar-header">
 	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -36,10 +29,12 @@
 	      <ul class="nav navbar-nav navbar-right">
 	        <li><%= link_to "About", about_path %></li>
 	      </ul>
-	    </div><!-- /.navbar-collapse -->
-	  </div><!-- /.container-fluid -->
+
 </nav>
 
+<div class="container">
+	    <%= yield %>
+</div>
    
   </body>
 </html>
