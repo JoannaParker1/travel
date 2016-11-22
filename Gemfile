@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
 
-
 #for Heroku:
 group :production do
   gem 'pg'
